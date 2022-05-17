@@ -6,7 +6,11 @@
       </div>
       <div class="header__nav-container__nav-menu">
         <ul>
-          <li v-for="(item, index) in headerLinks" :key="index">
+          <li
+            v-for="(item, index) in headerLinks"
+            :key="index"
+            :class="{ active: item.active }"
+          >
             <a href="">{{ item.text }}</a>
           </li>
         </ul>
@@ -97,6 +101,25 @@ export default {
     &__nav-menu {
       ul {
         display: flex;
+
+        li {
+          color: $black;
+          margin-left: 1rem;
+          line-height: $header-height;
+          border-bottom: 5px transparent;
+
+          &.active {
+            color: $primary-color;
+            border-bottom: 5px solid $primary-color;
+          }
+
+          a {
+            color: inherit;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: bold;
+          }
+        }
       }
     }
   }
