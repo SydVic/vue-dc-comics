@@ -3,19 +3,21 @@
     <AppHeader />
     <main>qui andrà il contenuto</main>
     <PreFooter />
-    <!-- FOOTER -->
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import PreFooter from "./components/PreFooter.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
     PreFooter,
+    AppFooter,
   },
 };
 </script>
