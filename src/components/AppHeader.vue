@@ -105,12 +105,12 @@ export default {
         li {
           color: $black;
           margin-left: 1rem;
-          line-height: $header-height;
-          border-bottom: 5px transparent;
+          line-height: calc($header-height - $active-border-bottom);
+          border-bottom: $active-border-bottom solid transparent;
 
           &.active {
             color: $primary-color;
-            border-bottom: 5px solid $primary-color;
+            border-bottom: $active-border-bottom solid $primary-color;
           }
 
           a {
