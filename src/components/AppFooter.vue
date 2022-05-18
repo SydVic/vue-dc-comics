@@ -98,7 +98,13 @@
         <img src="../assets/img/dc-logo-bg.png" alt="" />
       </div>
     </section>
-    <section class="footer__bottom"></section>
+    <section class="footer__bottom">
+      <div class="footer__bottom__container">
+        <div class="cta-btn-wrapper">
+          <a href="">sign-up now!</a>
+        </div>
+      </div>
+    </section>
   </footer>
 </template>
 
@@ -148,6 +154,24 @@ export default {
   &__bottom {
     height: 100px;
     background-color: $dark-grey;
+    display: flex;
+    align-items: center;
+
+    &__container {
+      @include general-container-properties();
+
+      .cta-btn-wrapper {
+        display: inline-block;
+        border: 2px solid $primary-color;
+
+        a {
+          display: inline-block;
+          color: $white;
+          text-transform: uppercase;
+          padding: 0.7rem 0.7rem;
+        }
+      }
+    }
   }
 }
 </style>
