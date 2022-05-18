@@ -144,5 +144,10 @@ export default {
       margin-left: auto;
     }
   }
+
+  &__bottom {
+    height: 100px;
+    background-color: $dark-grey;
+  }
 }
 </style>
