@@ -94,9 +94,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__top__logo-wrapper">
-        <img src="../assets/img/dc-logo-bg.png" alt="" />
-      </div>
+      <div class="footer__top__logo-wrapper"></div>
     </section>
     <section class="footer__bottom">
       <div class="footer__bottom__container">
@@ -151,14 +149,14 @@ export default {
 
 .footer {
   background-image: url("../assets/img/footer-bg.jpg");
-  overflow: hidden;
+  background-size: cover;
 
   &__top {
     @include general-container-properties();
     display: flex;
 
     &__col {
-      margin-right: 2rem;
+      margin: 2rem 2rem 3rem 0;
 
       h3 {
         color: $white;
@@ -177,7 +175,11 @@ export default {
       }
     }
     &__logo-wrapper {
-      margin-left: auto;
+      background-image: url("../assets/img/dc-logo-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-grow: 1;
     }
   }
 
@@ -216,16 +218,13 @@ export default {
       color: $primary-color;
       text-transform: uppercase;
       font-weight: 600;
+      margin-right: 1.5rem;
     }
 
     .social-list {
       li {
         display: inline-block;
-        margin-left: 0.8rem;
-
-        a {
-          font-size: 0.8rem;
-        }
+        margin-left: 1rem;
       }
     }
   }

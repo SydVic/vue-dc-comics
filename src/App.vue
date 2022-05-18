@@ -2,21 +2,21 @@
   <div id="app">
     <AppHeader />
     <main>qui andrà il contenuto</main>
-    <PreFooter />
+    <AppPrefooter />
     <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import PreFooter from "./components/PreFooter.vue";
+import AppPrefooter from "./components/AppPrefooter.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
-    PreFooter,
+    AppPrefooter,
     AppFooter,
   },
 };

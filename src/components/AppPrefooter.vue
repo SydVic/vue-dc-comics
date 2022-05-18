@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "PreFooter",
+  name: "AppPrefooter",
 };
 </script>
 
@@ -15,14 +15,13 @@ export default {
 @import "../style/mixin.scss";
 
 .pre-footer {
+  /*test*/
   height: $pre-footer-height;
+  /*test*/
   background-color: $primary-color;
 
   &__container {
     @include general-container-properties();
-    /*test*/
-    border: 1px solid white;
-    height: 100%;
   }
 }
 </style>
