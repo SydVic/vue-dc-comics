@@ -116,6 +116,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/mixin.scss";
+@import "../style/common.scss";
 @import "../style/variables.scss";
 
 .general-container {
@@ -146,7 +147,7 @@ export default {
 
   .expand-btn {
     background-color: $primary-color;
-    margin-bottom: 1.5rem;
+    margin: 2.5rem 0 1.5rem 0;
 
     a {
       display: inline-block;
