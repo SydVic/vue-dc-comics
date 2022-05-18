@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <AppHeader />
-    <main>qui andrà il contenuto</main>
+    <main>
+      <ComicsSlide />
+    </main>
     <AppPrefooter />
     <AppFooter />
   </div>
@@ -9,6 +11,7 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import ComicsSlide from "./components/ComicsSlide.vue";
 import AppPrefooter from "./components/AppPrefooter.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -16,6 +19,7 @@ export default {
   name: "App",
   components: {
     AppHeader,
+    ComicsSlide,
     AppPrefooter,
     AppFooter,
   },
@@ -26,16 +30,8 @@ export default {
 @import "./style/common.scss";
 @import "./style/variables.scss";
 
-/* test*/
-body {
-  background-color: #000000;
-}
 main {
-  color: $white;
-  height: $main-height;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #000000;
 }
 /*test*/
 </style>
