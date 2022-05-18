@@ -94,7 +94,9 @@
           </li>
         </ul>
       </div>
-      <div class="footer__top__logo-wrapper"></div>
+      <div class="footer__top__logo-wrapper">
+        <img src="../assets/img/dc-logo-bg.png" alt="" />
+      </div>
     </section>
     <section class="footer__bottom">
       <div class="footer__bottom__container">
@@ -154,6 +156,8 @@ export default {
   &__top {
     @include general-container-properties();
     display: flex;
+    position: relative;
+    overflow: hidden;
 
     &__col {
       margin: 2rem 2rem 3rem 0;
@@ -175,11 +179,9 @@ export default {
       }
     }
     &__logo-wrapper {
-      background-image: url("../assets/img/dc-logo-bg.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      flex-grow: 1;
+      position: absolute;
+      right: 0;
+      transform: translate(0, -10%);
     }
   }
 
