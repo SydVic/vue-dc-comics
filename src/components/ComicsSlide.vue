@@ -1,5 +1,6 @@
 <template>
   <div class="general-container">
+    <div class="current-series">current series</div>
     <div class="comics-container">
       <ComicProduct
         v-for="(item, index) in comics"
@@ -122,6 +123,19 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .current-series {
+    background-color: $primary-color;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    position: absolute;
+    left: 0;
+    transform: translate(0, -50%);
+  }
 
   .comics-container {
     width: 100%;
