@@ -1,10 +1,15 @@
 <template>
   <div class="general-container">
-    <ComicProduct
-      v-for="(item, index) in comics"
-      :key="index"
-      :productObj="item"
-    />
+    <div class="comics-container">
+      <ComicProduct
+        v-for="(item, index) in comics"
+        :key="index"
+        :productObj="item"
+      />
+    </div>
+    <div class="expand-btn">
+      <a href="">load more</a>
+    </div>
   </div>
 </template>
 
@@ -110,12 +115,33 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/mixin.scss";
+@import "../style/variables.scss";
 
 .general-container {
   @include general-container-properties();
-
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  .comics-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .expand-btn {
+    background-color: $primary-color;
+    margin-bottom: 1.5rem;
+
+    a {
+      display: inline-block;
+      color: $white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0.5rem 3rem;
+    }
+  }
 }
 </style>

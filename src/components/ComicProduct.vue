@@ -21,6 +21,7 @@ export default {
 
 .comic-product-card {
   width: 200px;
+  margin: 3rem 0 2rem 0;
 
   .product-img {
     width: 200px;
@@ -30,6 +31,8 @@ export default {
 
   .product-title {
     color: $white;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
   }
 }
 </style>
