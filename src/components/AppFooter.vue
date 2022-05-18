@@ -103,6 +103,36 @@
         <div class="cta-btn-wrapper">
           <a href="">sign-up now!</a>
         </div>
+        <div class="social-contacts-wrapper">
+          <div class="follow-us">follow us</div>
+          <ul class="social-list">
+            <li>
+              <a href="">
+                <img src="../assets/img/footer-facebook.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../assets/img/footer-twitter.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../assets/img/footer-youtube.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../assets/img/footer-pinterest.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../assets/img/footer-periscope.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </footer>
@@ -159,6 +189,9 @@ export default {
 
     &__container {
       @include general-container-properties();
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .cta-btn-wrapper {
         display: inline-block;
@@ -167,8 +200,31 @@ export default {
         a {
           display: inline-block;
           color: $white;
+          font-weight: 600;
           text-transform: uppercase;
           padding: 0.7rem 0.7rem;
+        }
+      }
+    }
+  }
+
+  .social-contacts-wrapper {
+    display: flex;
+    align-items: center;
+
+    .follow-us {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .social-list {
+      li {
+        display: inline-block;
+        margin-left: 0.8rem;
+
+        a {
+          font-size: 0.8rem;
         }
       }
     }
