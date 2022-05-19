@@ -1,7 +1,7 @@
 <template>
   <div class="comic-product-card">
     <div class="product-img">
-      <img :src="productObj.thumb" alt="productObj.series" />
+      <img :src="productObj.thumb" :alt="productObj.series" />
     </div>
     <div class="product-title">{{ productObj.series }}</div>
   </div>
