@@ -204,7 +204,7 @@ export default {
         a {
           display: inline-block;
           color: $white;
-          font-weight: 600;
+          font-weight: 500;
           text-transform: uppercase;
           padding: 0.7rem 0.7rem;
         }
@@ -219,7 +219,7 @@ export default {
     .follow-us {
       color: $primary-color;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
       margin-right: 1.5rem;
     }
 

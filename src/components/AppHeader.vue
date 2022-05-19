@@ -80,7 +80,6 @@ export default {
   height: $header-height;
   background-color: $white;
   display: flex;
-
   align-items: center;
 
   &__nav-container {

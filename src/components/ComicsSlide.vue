@@ -130,7 +130,7 @@ export default {
     background-color: $primary-color;
     color: $white;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     padding: 0.7rem 1.5rem;
     position: absolute;
@@ -153,7 +153,7 @@ export default {
       display: inline-block;
       color: $white;
       font-size: 0.8rem;
-      font-weight: 600;
+      font-weight: 500;
       text-transform: uppercase;
       padding: 0.5rem 3rem;
     }

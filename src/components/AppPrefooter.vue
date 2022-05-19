@@ -3,6 +3,7 @@
     <div class="pre-footer__container">
       <ul class="icons-list">
         <li v-for="(item, index) in icons" :key="index">
+          <!-- require serve quando inserisci l'immagine in maniera dinamica per far si che venga appunto "richiesta e passata" al browser -->
           <img :src="require(`../assets/img/${item.img}`)" alt="" />
           <h3>{{ item.text }}</h3>
         </li>
@@ -50,7 +51,7 @@ export default {
 
 .pre-footer {
   background-color: $primary-color;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 
   &__container {
     @include general-container-properties();
